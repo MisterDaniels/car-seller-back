@@ -1,0 +1,18 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 33008,
+    "username": "yourcar_admin",
+    "password": "yourcar-admin-pass-01",
+    "database": "yourcar",
+    "entities": [
+        "dist/**/entities/*{.ts,.js}"
+    ],
+    "syncronize": true,
+    "migrations": [
+        "src/migrations/*{.ts,.js}"
+    ],
+    "cli": {
+        "migrationsDir": "src/migrations"
+    }
+}
